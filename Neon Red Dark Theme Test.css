@@ -12,9 +12,9 @@
 
 /* CUSTOMIZE COLORS IN HERE! */
 :root {
-  --rgb-highlight: 255, 0, 0; /* The main highlight color (red) */
+  --rgb-highlight: 255, 255, 0; /* The main highlight color (red) */
   --rgb-background: 0, 0, 0; /* The main background color (black) */
-  --rgb-text: 29, 83, 171; /* The main text color */
+  --rgb-text: 197, 200, 198; /* The main text color */
   --rgb-close-button: 212, 18, 39; /* The close button color (red) */
   --rgb-online-color: 255, 150, 0; /* The online user status symbol color (orange) */
   --rgb-afk-color: 255, 255, 51; /* The idle user status symbol color (yellow) */
