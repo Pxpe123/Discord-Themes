@@ -12,15 +12,14 @@
 
 /* CUSTOMIZE COLORS IN HERE! */
 :root {
---rgb-highlight: 255, 204, 0; /* The main highlight color (elegant gold) */
---rgb-background: 0, 0, 0; /* The main background color (black) */
---rgb-text: 197, 200, 198; /* The main text color */
---rgb-close-button: 212, 18, 39; /* The close button color */
---rgb-online-color: 57, 255, 20; /* The online user status symbol color */
---rgb-afk-color: 255, 255, 51; /* The idle user status symbol color */
---rgb-dnd-color: 255, 0, 0; /* The do not disturb user status symbol color */
---rgb-streaming-color: 188, 19, 254; /* The streaming user status symbol color */
-
+  --rgb-highlight: 255, 215, 0; /* The main highlight color (refined gold) */
+  --rgb-background: 0, 0, 0; /* The main background color (black) */
+  --rgb-text: 197, 200, 198; /* The main text color */
+  --rgb-close-button: 212, 18, 39; /* The close button color */
+  --rgb-online-color: 57, 255, 20; /* The online user status symbol color */
+  --rgb-afk-color: 255, 255, 51; /* The idle user status symbol color */
+  --rgb-dnd-color: 255, 0, 0; /* The do not disturb user status symbol color */
+  --rgb-streaming-color: 188, 19, 254; /* The streaming user status symbol color */
        
 
   --transition-time: .3s; /* How fast animations added by the theme happen. Default is 0.3 seconds */
