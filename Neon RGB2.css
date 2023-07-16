@@ -21,18 +21,26 @@
   --background-brightness: 100%; /* Changes the background image's brightness */
   
   /* RGB Effect */
-  --rgb-interval: 5; /* Time interval in minutes for color change */
+  --rgb-interval: 5s; /* Time interval for color change (e.g., 5s for 5 seconds) */
   --rgb-red: 170; /* Red component value */
   --rgb-green: 0; /* Green component value */
   --rgb-blue: 255; /* Blue component value */
 }
 
-/* Calculate color change based on time interval */
-:root {
-  --rgb-highlight: calc(var(--rgb-red) + calc(var(--rgb-green) * 256) + calc(var(--rgb-blue) * 65536));
+/* Apply color change using keyframes animation */
+@keyframes rgbEffect {
+  0% {
+    --rgb-highlight: rgb(var(--rgb-red), var(--rgb-green), var(--rgb-blue));
+  }
+  50% {
+    --rgb-highlight: rgb(0, 0, 0); /* Change to your desired color at 50% */
+  }
+  100% {
+    --rgb-highlight: rgb(var(--rgb-red), var(--rgb-green), var(--rgb-blue));
+  }
 }
 
-/* Apply color change transition */
-:root {
-  transition: --rgb-highlight var(--transition-time);
+/* Apply animation to the desired elements */
+.highlight, button, .user-status-symbol {
+  animation: rgbEffect var(--rgb-interval) infinite;
 }
